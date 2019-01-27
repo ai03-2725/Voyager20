@@ -1,7 +1,10 @@
 # Voyager20
 A versatile, modern numpad PCB
 
-![Render](https://github.com/ai03-2725/Voyager20/blob/master/Render/Front.png)
+This is the 24 key variant with fn row.
+For the regular variant, see [this](https://github.com/ai03-2725/Voyager20).
+
+![Render](https://raw.githubusercontent.com/ai03-2725/Voyager20/FnRow/Render/Front.png)
 
 ### Features
 * In-switch LED backlighting
