@@ -607,28 +607,10 @@ F 3 "" H 2100 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2100 6700
-$Comp
-L MCU_Microchip_ATmega:ATmega32U2-AU U1
-U 1 1 5C4CD665
-P 2550 2500
-F 0 "U1" H 2550 1014 50  0000 C CNN
-F 1 "ATmega32U2-AU" H 2550 923 50  0000 C CNN
-F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 2550 2500 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 2550 2500 50  0001 C CNN
-	1    2550 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 1100 2550 1100
-Connection ~ 2450 1100
-Connection ~ 2550 1100
-Wire Wire Line
-	2550 1100 2650 1100
 Wire Wire Line
 	2450 4225 2450 3900
 Wire Wire Line
 	2450 3900 2550 3900
-Connection ~ 2450 3900
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5C4ECFAF
@@ -1928,4 +1910,154 @@ Wire Wire Line
 Wire Wire Line
 	5100 5950 5100 6475
 NoConn ~ 5700 6475
+$Comp
+L MX_Alps_Hybrids:MX-1U MX?
+U 1 1 5C63211B
+P 8125 5125
+AR Path="/59E84325/5C63211B" Ref="MX?"  Part="1" 
+AR Path="/5C63211B" Ref="MX-E-3"  Part="1" 
+F 0 "MX-E-3" H 8211 5342 60  0000 C CNN
+F 1 "MX-2U" H 8211 5268 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-2U-ReversedStabilizers" H 8100 5100 60  0001 C CNN
+F 3 "" H 8100 5100 60  0001 C CNN
+	1    8125 5125
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrids:MX-1U MX-E-?
+U 1 1 5C6326CC
+P 10200 4475
+AR Path="/59E84325/5C6326CC" Ref="MX-E-?"  Part="1" 
+AR Path="/5C6326CC" Ref="MX-E-2"  Part="1" 
+F 0 "MX-E-2" H 10286 4692 60  0000 C CNN
+F 1 "MX-2U" H 10286 4618 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-2U-ReversedStabilizers" H 10175 4450 60  0001 C CNN
+F 3 "" H 10175 4450 60  0001 C CNN
+	1    10200 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrids:MX-1U MX-E-?
+U 1 1 5C632A78
+P 10200 3125
+AR Path="/59E84325/5C632A78" Ref="MX-E-?"  Part="1" 
+AR Path="/5C632A78" Ref="MX-E-1"  Part="1" 
+F 0 "MX-E-1" H 10286 3342 60  0000 C CNN
+F 1 "MX-2U" H 10286 3268 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-2U-ReversedStabilizers" H 10175 3100 60  0001 C CNN
+F 3 "" H 10175 3100 60  0001 C CNN
+	1    10200 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1100 2650 1100
+Wire Wire Line
+	2450 1100 2550 1100
+Connection ~ 2550 1100
+Connection ~ 2450 1100
+Connection ~ 2450 3900
+$Comp
+L MCU_Microchip_ATmega:ATmega32U2-AU U1
+U 1 1 5C4CD665
+P 2550 2500
+F 0 "U1" H 2550 1014 50  0000 C CNN
+F 1 "ATmega32U2-AU" H 2550 923 50  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 2550 2500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 2550 2500 50  0001 C CNN
+	1    2550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q1
+U 1 1 5C635883
+P 3950 2100
+F 0 "Q1" H 4141 2146 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 4141 2055 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4150 2200 50  0001 C CNN
+F 3 "~" H 3950 2100 50  0001 C CNN
+	1    3950 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4050 1900 2    50   Input ~ 0
+LEDGND
+$Comp
+L Device:R_Small R27
+U 1 1 5C641C19
+P 3650 2100
+F 0 "R27" V 3575 2000 50  0000 L CNN
+F 1 "1k" V 3575 2125 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3650 2100 50  0001 C CNN
+F 3 "" H 3650 2100 50  0001 C CNN
+	1    3650 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 2100 3250 2100
+$Comp
+L power:GND #PWR0115
+U 1 1 5C64DD85
+P 4050 2300
+F 0 "#PWR0115" H 4050 2050 50  0001 C CNN
+F 1 "GND" H 4055 2127 50  0000 C CNN
+F 2 "" H 4050 2300 50  0001 C CNN
+F 3 "" H 4050 2300 50  0001 C CNN
+	1    4050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 3100 10375 3100
+Wire Wire Line
+	10325 3150 9900 3150
+Wire Wire Line
+	9875 3250 10225 3250
+Connection ~ 9875 3250
+Wire Wire Line
+	10175 3300 9750 3300
+Connection ~ 9750 3300
+Wire Wire Line
+	9950 4450 10375 4450
+Connection ~ 9950 4450
+Wire Wire Line
+	10325 4500 9900 4500
+Connection ~ 9900 4500
+Wire Wire Line
+	9875 4600 10225 4600
+Connection ~ 9875 4600
+Wire Wire Line
+	10175 4650 9750 4650
+Connection ~ 9750 4650
+Wire Wire Line
+	8300 4450 8300 5100
+Connection ~ 8300 4450
+Wire Wire Line
+	8250 5150 8250 4500
+Connection ~ 8250 4500
+Wire Wire Line
+	8150 4600 8150 5250
+Connection ~ 8150 4600
+Wire Wire Line
+	8100 5300 8100 4650
+Connection ~ 8100 4650
+Text GLabel 3250 1600 2    50   Input ~ 0
+COL3
+Text GLabel 3250 1700 2    50   Input ~ 0
+COL2
+Text GLabel 3250 3300 2    50   Input ~ 0
+COL0
+Text GLabel 3250 3400 2    50   Input ~ 0
+COL1
+Text GLabel 3250 3500 2    50   Input ~ 0
+ROW2
+Text GLabel 3250 3600 2    50   Input ~ 0
+ROW3
+Text GLabel 5100 3325 0    50   Input ~ 0
+RGBLED
+Text GLabel 3250 2500 2    50   Input ~ 0
+ROW1
+Text GLabel 3250 2400 2    50   Input ~ 0
+ROW0
+Text GLabel 3250 2000 2    50   Input ~ 0
+ROW4
+Text GLabel 3250 1900 2    50   Input ~ 0
+RGBLED
 $EndSCHEMATC
