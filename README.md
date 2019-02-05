@@ -12,6 +12,7 @@ For the regular variant, see [this](https://github.com/ai03-2725/Voyager20).
 * 2U positions can be replaced with 2x1U keys
 * Over-current and static discharge protection
 * Fully open-source
+* Note: This variant does not have USB Type-C or RGB underglow for obvious reasons.
 
 ### The Voyager PCB Family
 The Voyager PCBs offer fully featured PCBs fit for any keyboard, whether mass production or high-end.
