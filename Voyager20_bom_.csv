@@ -1,0 +1,35 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,Unpolarized capacitor,C_Small,C4 C5 CR1 CR2 CR3 CR4,0.1u,C_0603,6,
+2,Unpolarized capacitor,C_Small,C3,1uF,C_0603,1,
+3,Unpolarized capacitor,C_Small,C1 C2,22p,C_0603,2,
+4,Unpolarized capacitor,C_Small,C6,4.7u,C_0603,1,
+5,"Diode, small symbol",D_Small,D1 D2 D3 D4 D5 D6 D7 D8 D10 D11 D12 D13 D14 D15 D16 D17 D19 D20 D21 D22 D25 D26 D27 D28,SOD-123,D_SOD-123,24,~
+6,RGB LED with integrated controller,WS2812B,D9 D18 D23 D24,WS2812B,LED_WS2812B-PLCC4,4,https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
+7,"resettable fuse, polymeric positive temperature coefficient (PPTC), small symbol",Polyfuse_Small,F1,500mA,Fuse_SMD1206_Reflow,1,
+8,,MX-1U,MX1 MX2 MX3 MX4 MX5 MX6 MX7 MX8 MX9 MX10 MX11 MX12 MX13 MX14 MX15 MX16 MX17 MX18 MX19 MX20 MX21 MX22 MX23 MX24,MX-1U,MX-1U,24,
+9,,MX-1U,MX-E-1 MX-E-2 MX-E-3,MX-2U,MX-2U-ReversedStabilizers,3,
+10,Transistor NPN (general),Q_NPN_BEC,Q1,Q_NPN_BEC,SOT-23,1,~
+11,"Resistor, small symbol",R_Small,R1 R5,10k,R_0805,2,
+12,"Resistor, small symbol",R_Small,R7 R8 R9 R10 R11 R12 R13 R14 R15 R16 R17 R18 R19 R20 R21 R22 R23 R24 R25 R26 R27 R28 R29 R30 R31,1k,R_0805,25,~
+13,"Resistor, small symbol",R_Small,R2 R3,22,R_0805,2,
+14,"Resistor, small symbol",R_Small,R4 R6,5.1k,R_0805,2,
+15,"Push button switch, generic, two pins",SW_Push,SW1,SW_Push,SKQG-1155865,1,
+16,"16MHz, 8kB Flash, 512B SRAM, 512B EEPROM, TQFP-32",ATmega32U2-AU,U1,ATmega32U2-AU,QFN-32-1EP_5x5mm_Pitch0.5mm,1,http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf
+17,,PRTR5V0U2X,U2,PRTR5V0U2X,SOT143B,1,
+18,,HRO-TYPE-C-31-M-12,USB1,HRO-TYPE-C-31-M-12,HRO-TYPE-C-31-M-12-Assembly,1,
+19,"Four pin crystal, two ground/package pins (pin2 and 4) small symbol",Crystal_GND24_Small,Y1,16MHz,Crystal_SMD_3225-4pin_3.2x2.5mm,1,
+
+
+
+
+
+Component Groups:,19
+Component Count:,103
+Fitted Components:,103
+Number of PCBs:,1
+Total components:,103
+Schematic Version:,
+Schematic Date:,
+BoM Date:,2/17/2019 7:46:13 PM
+Schematic Source:,C:\Users\Ryota\Documents\GitHub\Voyager20\Voyager20.sch
+KiCad Version:,Eeschema (5.0.0)
